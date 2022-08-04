@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#a00000"
+    android:orientation="vertical"
+    android:minHeight="50dp">
+ 
+    <TextView
+        android:id="@+id/textSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="Lunch"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF"
+        android:visibility="visible"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/mealTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF"
+        android:visibility="visible"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:layout_marginTop="-15dp" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Saturday"
+			android:id="@+id/sat"
+			android:layout_weight="1"
+			android:textColor="#ffffff"
+			android:background="#a00000"
+			android:height="50dp" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Sunday"
+			android:id="@+id/sun"
+			android:layout_weight="1"
+			android:textColor="#ffffff"
+			android:background="#a00000"
+			android:layout_marginLeft="2dp"
+			android:height="50dp" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Monday"
+			android:id="@+id/mon"
+			android:layout_weight="1"
+			android:textColor="#ffffff"
+			android:background="#a00000"
+			android:layout_marginLeft="2dp"
+			android:height="50dp" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Tuesday"
+			android:id="@+id/tue"
+			android:layout_weight="1"
+			android:textColor="#ffffff"
+			android:background="#a00000"
+			android:layout_marginLeft="2dp"
+			android:height="50dp" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/message"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:gravity="center_vertical|center_horizontal"
+		android:lineSpacingExtra="5dp"
+		android:lines="6"
+		android:padding="5dp"
+		android:text="You don't have any saved events.  Please make sure you favorite app from schedule View."
+		android:textSize="28sp"
+		android:textStyle="normal"
+		android:visibility="gone" />
+
+	<ListView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tableDataview"
+		android:layout_marginTop="2dp"
+		android:layout_gravity="center_vertical" />
+
+</LinearLayout>

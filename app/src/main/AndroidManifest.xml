@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tekqube.imrc"
+    android:versionCode="8"
+    android:versionName="1.0.8">
+
+    <meta-data android:name="com.google.android.gms.analytics.globalConfigResource"
+	android:resource="@xml/global_tracker" />
+
+    <!--<uses-sdk-->
+        <!--android:minSdkVersion="13"-->
+        <!--android:targetSdkVersion="19" />-->
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+	<!--  Google Maps  -->
+	<permission
+        android:name="com.tekqube.imrc.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.tekqube.imrc.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+	<!--  End -->
+	    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.tekqube.application.IMRCApp">
+
+        <activity
+            android:name="com.tekqube.imrc.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+         <activity
+            android:name="com.tekqube.imrc.NavDrawerMainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+          <activity
+            android:name="com.tekqube.people.attendee.MainActivity"
+            android:label="@string/title_activity_people" 
+            android:screenOrientation="portrait">
+            
+        </activity>    
+        
+        <activity
+            android:name="com.tekqube.people.SpeakersActivity"
+            android:label="@string/title_activity_speakers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tekqube.people.SpeakersDetailActivity"
+            android:label="@string/title_activity_speakers_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tekqube.people.CommitteeActivity"
+            android:label="@string/title_activity_committee"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tekqube.people.SponsorActivity"
+            android:label="@string/title_activity_sponsor"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.tekqube.information.HotelMaps"
+            android:label="@string/title_activity_HotelMaps"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.tekqube.information.MainActivity"
+            android:label="@string/title_activity_HotelMaps"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.tekqube.information.Information"
+            android:label="@string/title_activity_HotelMaps"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.tekqube.information.FullImageActivity"
+            android:label="@string/title_activity_HotelMaps"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="com.tekqube.information.HotelMapConfRoomActivity"
+            android:label="@string/title_activity_NearByAttraction" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+          <activity
+            android:name="com.tekqube.information.WeatherMainActivity"
+            android:label="@string/title_activity_HotelMaps" 
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity
+            android:name="com.tekqube.about.WebViewActivity"
+            android:label="@string/title_activity_Socialf"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        
+         <activity
+            android:name="com.tekqube.about.weatherapp.MainActivity"
+            android:label="@string/title_activity_Weather" 
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        
+           <activity
+            android:name="com.tekqube.imrc.ScheduleDetailActivity"
+            android:label="@string/title_schedule_detail" 
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.maps.v2.API_KEY"-->
+            <!--android:value="AIzaSyCP5bRf1Ob_mN4eGgW3GFpK-PruNk6nneA" />-->
+
+        <!--<meta-data android:name="com.google.android.gms.version" android:value="5077000"/>-->
+
+        <!-- Required to show current location -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:lines="6"
+        android:padding="5dp"
+        android:text="Mr. Bavlo welcomes you to IMRC 2018. The event begins on June 30th. Kindly review the schedule and mark your favorites."
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

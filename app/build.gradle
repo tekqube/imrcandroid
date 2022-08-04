@@ -1,0 +1,55 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    compileOptions.encoding = 'windows-1251' // write your encoding here
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.tekqube.imrcAppNew"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 13
+        versionName "1.0.9"
+        multiDexEnabled true
+        manifestPlaceholders = [\
+            onesignal_app_id: '532b6453-edae-444a-b115-48d4273b867d',
+            onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'org.apache.poi:poi-ooxml:3.17'
+    compile 'com.fasterxml:aalto-xml:1.1.0'
+    compile 'com.android.support:multidex:1.0.3'
+    compile "com.android.support:support-v4:27.1.1"
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+
+    compile 'com.android.volley:volley:1.0.0'
+    testCompile 'junit:junit:4.12'
+
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.1'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'com.onesignal:OneSignal:[3.6.5,3.99.99]'
+}

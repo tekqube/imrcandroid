@@ -1,0 +1,100 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   		<ImageView
+   		    android:id="@+id/speakerPhoto"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_above="@+id/name"
+   		    android:layout_centerHorizontal="true"
+   		    android:layout_weight="0.5"
+   		    android:src="@drawable/rameshchandak" />
+
+   		<TextView
+   		    android:id="@+id/name"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_weight="0.1"
+   		    android:background="#a00000"
+   		    android:gravity="center"
+   		    android:text="Vinod Ajmera"
+   		    android:textColor="#fff"
+   		    android:textSize="25dip" />
+
+	<TableRow
+	android:id="@+id/tableRow4"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="0.1" >
+
+	<TextView
+		android:id="@+id/speakerTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="5dp"
+		android:text="Locationonzz"
+		android:textSize="18sp"
+		android:textColor="#a00000"
+		android:autoText="false"
+		android:gravity="left" />
+
+	</TableRow>
+
+	<TableRow
+		android:id="@+id/tableRow3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.1" >
+			<TextView
+                    android:id="@+id/speakerLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+				android:textSize="18sp"
+				android:textColor="#a00000"
+				android:autoText="false"
+				android:gravity="left" />
+</TableRow>
+
+	<TableRow
+		android:id="@+id/tableRow5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.1" >
+
+		<TextView 		android:id="@+id/speakerAchievements"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="5dp"
+		android:text="Locationonzz"
+		android:textSize="18sp"
+		android:textColor="#a00000"
+		android:autoText="false"
+		android:gravity="left" />
+
+		</TableRow>
+
+	<TableRow
+		android:id="@+id/tableRow6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.1" >
+
+		<TextView android:id="@+id/communityInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="5dp"
+			android:text="Locationonzz"
+			android:textSize="18sp"
+			android:textColor="#a00000"
+			android:autoText="false"
+			android:gravity="left" />
+</TableRow>
+
+
+</TableLayout>

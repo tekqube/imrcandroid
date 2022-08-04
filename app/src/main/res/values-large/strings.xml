@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="conditionIcon">condition</string>
+    <string name="currentTemp">Current Temperature</string>
+    <string name="imrc_facebook_page">IMRC Facebook Page</string>
+    <string name="call_phone_permission">Allow call phone feature to call</string>
+</resources>

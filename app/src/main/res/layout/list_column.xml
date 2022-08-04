@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="right"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/country"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:padding="1dp"
+        android:src="@drawable/ic_home" />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/flag"
+        android:text="event name"
+        android:textColor="#a00000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rank"
+        android:layout_below="@+id/rank"
+        android:layout_marginTop="5dp"
+        android:text="10:00 - 12:00"
+        android:textColor="#a00000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/time"
+        android:layout_below="@+id/time"
+        android:text="Emperial room"
+        android:textColor="#a00000"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/starButton"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/flag"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/favorite" />
+
+</RelativeLayout>
